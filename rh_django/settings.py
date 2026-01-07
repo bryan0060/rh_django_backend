@@ -146,8 +146,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-if not DEBUG:    # Solo en producción
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+if not DEBUG:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # --- CORS ---
