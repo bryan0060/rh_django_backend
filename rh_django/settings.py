@@ -151,8 +151,11 @@ if not DEBUG:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # --- CORS ---
-CORS_ALLOWED_ORIGINS = [
- "http://localhost:4200", # Angular
- "http://localhost:5173", # React (Vite)
-]
+#CORS_ALLOWED_ORIGINS = [
+ #"http://localhost:4200", # Angular
+ #"http://localhost:5173", # React (Vite)
+#]
+
+# Permitir cualquier url para acceder al front
+CORS_ALLOW_ALL_ORIGINS = True
 
