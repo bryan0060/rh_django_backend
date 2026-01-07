@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales (¡Muy importante no subir esto!)
+venv/
+.venv/
+env/
+
+# Variables de entorno y seguridad
+.env
+db.sqlite3
+
+# Archivos estáticos
+staticfiles/
+
+# IDEs
+.idea/
+.vscode/
